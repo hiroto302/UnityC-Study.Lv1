@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class TypeInference : MonoBehaviour
 {
     void Start()
     {
@@ -11,6 +11,7 @@ public class NewBehaviourScript : MonoBehaviour
         var hp = 100;
         var st = "hello";
         var c = new Vector3(1, 2, 3);
+        print(st);
     }
 
     // Update is called once per frame
