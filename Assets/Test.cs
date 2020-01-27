@@ -34,11 +34,22 @@ public class Test : MonoBehaviour
         int age = 20;
         string result = age >= 20 ? "大人" : "子供" ;
         Debug.Log(result);
+
+        //引数
+        Magic(10);  //敵に10ダメージ
+        int damage = 30;
+        Magic(damage);  //引数に同じ型の変数を指定
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    //引数
+    void Magic(int amount)
+    {
+        print("敵に" + amount + "ダメージ");
     }
 }
