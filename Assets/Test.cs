@@ -39,6 +39,11 @@ public class Test : MonoBehaviour
         Magic(10);  //敵に10ダメージ
         int damage = 30;
         Magic(damage);  //引数に同じ型の変数を指定
+
+        //戻り値
+        Debug.Log(CheckMagicPower());
+        int magicPower = CheckMagicPower();  //メソッドを変数に入れ直す
+        Debug.Log(magicPower);
     }
 
     // Update is called once per frame
@@ -51,5 +56,12 @@ public class Test : MonoBehaviour
     void Magic(int amount)
     {
         print("敵に" + amount + "ダメージ");
+    }
+
+    //戻り値  メソッドが出力する値
+    int CheckMagicPower()
+    {
+        int magicPower = 30;
+        return magicPower;
     }
 }
