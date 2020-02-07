@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class forTest : MonoBehaviour
 {
+    //while文とfor文の使い分けはどのような時にくるのか楽しみ
     void Start()
     {
         for(int i = 0; i < 5; i++)
